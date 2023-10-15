@@ -260,8 +260,125 @@ a {
   padding: 5px 10px;
 }
 
+/* -----aside Bar------- */
 .blogs_groups .asideBar {
   width: calc(100% - 70%);
-  /* border: 1px solid #2fd; */
-  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.location_input {
+  display: flex;
+  margin-top: 1rem;
+  position: relative;
+}
+.location_input .fa-location-dot {
+  position: absolute;
+  top: 12px;
+  color: #525252;
+  flex-shrink: 0;
+  left: 10px;
+}
+.location_input .fa-pencil {
+  position: absolute;
+  top: 12px;
+  color: #525252;
+  flex-shrink: 0;
+  right: 10px;
+}
+.location_input input {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  width: 15rem;
+  height: 2.5rem;
+  flex-shrink: 0;
+  border-radius: 6px;
+  outline: none;
+  padding-left: 2rem;
+}
+.location_input input::placeholder {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.worning {
+  display: flex;
+  align-items: center;
+  width: 15rem;
+}
+.asideBar .worning p {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.5;
+}
+.recommend_group {
+  min-width: 70%;
+}
+.recommend_group h4 {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+.recommend_group h4 .fa-solid {
+  color: #525252;
+  font-size: 18px;
+}
+.groups-details {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* margin-top: 1rem; */
+}
+.groups-details .group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+}
+.groups-details .group div {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  flex-shrink: 0;
+}
+.groups-details .group h5 {
+  color: #000;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.group button {
+  width: 60px;
+  height: 24px;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 14px;
+  background: #edeef0;
+}
+.groups-details .group button a {
+  color: #000;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 5px 3px;
+}
+.seemore{
+  text-align: right;
+  color: #2f6ce5;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
