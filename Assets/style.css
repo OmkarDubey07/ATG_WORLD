@@ -165,7 +165,7 @@ a {
   width: 100%;
   display: flex;
   margin-top: 2rem;
-  gap: 1.5`rem;
+  gap: 1.5rem;
 }
 .blogs_groups .blogs {
   width: calc(100% - 30%);
