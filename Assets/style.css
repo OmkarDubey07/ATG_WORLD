@@ -40,8 +40,8 @@ a {
   color: #7a7a7a;
 }
 .search-bar input {
-  width: 360px;
-  height: 42px;
+  width: 22.5rem;
+  height: 2.6rem;
   flex-shrink: 0;
   border-radius: 21px;
   background: #f2f2f2;
@@ -83,6 +83,7 @@ a {
   padding: 0 4.4rem;
   height: 24px;
   flex-shrink: 0;
+  float: right;
 }
 .mobile-nav i {
   color: #868e96;
@@ -159,6 +160,11 @@ a {
 .joinGroup button {
   background-color: #2f6ce5;
   color: #fff;
+}
+/* blogs buttons for phone  */
+.mb-blog-btn{
+  display: none;
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.12);
 }
 /* blogs */
 .blogs_groups {
@@ -468,5 +474,164 @@ a {
 }
 
 
+/* --------------------------- */  
+    /* RESPONSIVE SECTION */
 
 
+@media (max-width : 1024px) {
+  .join-btn a button{
+    font-size: 14px;
+  }
+  .blogs-buttons ul li a{
+    font-size: 15px;
+  }
+  .blog-content h2{
+    font-size: 21px;
+  }
+  .blog-heading button{
+    font-size: 21px;
+  }
+  .blog-content .cate ~ p{
+    font-size: 18px;
+    line-height: 1.8rem;
+  }
+  .blog-id img{
+    width: 44px;
+    height: 44px;
+  }
+  .blog-id h3{
+    font-size: 17px;
+  }
+  .blog-id p{
+    font-size: 13px;
+  }
+  .blog-id button{
+    font-size: 14px;
+  }
+}
+@media  (max-width: 960px) { 
+
+  /* nav */
+  .desktop-nav{
+    padding: 0 3rem;
+  }
+  .brand-logo img{
+    width:9rem;
+  }
+  .search-bar input{
+    width: 20rem;
+    height: 2.4rem;
+    border-radius: 17px;
+  }
+  .search-bar input::placeholder{
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .create-ac{
+    font-size: 14px;
+  }
+  /* main */
+  .main-section .hero-content{
+    position: absolute;
+    left: 10%;
+    bottom: 14%;
+  }
+  .hero-content h1{
+    font-size: 34px;
+  }
+  .hero-content p{
+    font-size: 16px;
+  }
+  /* blog section */
+  .blog-section{
+    padding: 0 8%;
+  }
+  .blogs-buttons ul li a{
+    font-size: 13px;
+  }
+  .join-btn a button{
+    padding: 6px 8px;
+    margin-right: 5px;
+    font-size: 12;
+  }
+
+  .blogs_groups .blogs .blog{
+    width: 99% ;
+  }
+
+  .blog-content h2{
+    font-size: 18px;
+    line-height: 1.8rem;
+  }
+  .blog-content button{
+    font-size: 18px;
+  }
+  .blog-content .cate img{
+    width: 5rem;
+  }
+  .blog-content .cate {
+  margin-bottom: .5rem;
+}
+  .blog-content .cate ~ p{
+    font-size: 16px;
+    line-height: 1.5rem;
+  }
+   .blog-id img{
+    width: 36px;
+    height: 36px;
+  }
+  .blog-id h3{
+    font-size: 15px;
+  }
+   .blog-id p{
+    font-size: 12px;
+  }
+  .blog-id button{
+    font-size: 12px;
+  }
+  .schedule p{
+    font-size: 14px;
+  }
+  .visit-web button, .apply-job button{
+    font-size: 12px;
+    height: 30px;
+  }
+
+  /* sidebar */
+  .location_input input{
+    width: 100%;
+  }
+  .location_input input::placeholder{
+    font-size: 12px;
+  }
+  .location_input .fa-location-dot ,
+  .location_input .fa-pencil{
+    font-size: 12px;
+    top: 15px;
+  }
+  .worning{
+    width: 100%;
+  }
+  .recommend_group{
+    min-width: 100%;
+  }
+  .recommend_group h4{
+    font-size: 12px;
+    letter-spacing: 1.2px;
+  }
+  .recommend_group h4 .fa-solid{
+    font-size: 16px;
+  }
+  .groups-details .group h5{
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) { 
+
+}
+@media (max-width:580px){
+
+}
+@media (max-width:450px){
+
+}
