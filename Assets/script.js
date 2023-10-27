@@ -39,3 +39,24 @@ followBtns.forEach(btns =>{
         }
     });
 });
+
+
+function onMobileView(){
+    let mbViewShow = document.querySelectorAll('.mb-viewer-show');
+    let desktopViewShow = document.querySelectorAll('.desktop-viewer-show');
+    let blogsShareBtns = document.querySelectorAll('.blog-share-btns');
+    if (window.innerWidth <= 450 ) {
+        mbViewShow.forEach(e => {
+            e.parentElement.style.display= 'flex';
+            e.parentElement.style.flexDirection= 'column';
+            e.parentElement.style.gap= '0';
+            e.parentElement.style.alignItems= 'start';
+            e.style.fontSize = "12px"
+            e.style.color = "#495057"
+            e.style.fontWeight = "600"
+            e.style.lineHeight = "normal"
+        });
+        
+    }
+}
+onMobileView();
